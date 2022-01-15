@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1535E804279334B6004AE429 /* libcmark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1535E803279334B6004AE429 /* libcmark.a */; };
 		450C002A1EE405500016877C /* cmark_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 450C00261EE405500016877C /* cmark_export.h */; };
 		450C002B1EE405500016877C /* cmark_version.h in Headers */ = {isa = PBXBuildFile; fileRef = 450C00271EE405500016877C /* cmark_version.h */; };
 		450C002C1EE405500016877C /* cmark.h in Headers */ = {isa = PBXBuildFile; fileRef = 450C00281EE405500016877C /* cmark.h */; };
-		450C002D1EE405500016877C /* libcmark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 450C00291EE405500016877C /* libcmark.a */; };
 		453120C21E9E1E1C00D752F5 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 453120C11E9E1E1C00D752F5 /* GenerateThumbnailForURL.m */; };
 		453120C41E9E1E1C00D752F5 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 453120C31E9E1E1C00D752F5 /* GeneratePreviewForURL.m */; };
 		453120C61E9E1E1C00D752F5 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 453120C51E9E1E1C00D752F5 /* main.c */; };
@@ -20,10 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1535E803279334B6004AE429 /* libcmark.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcmark.a; path = cmark/libcmark.a; sourceTree = "<group>"; };
 		450C00261EE405500016877C /* cmark_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmark_export.h; path = cmark/cmark_export.h; sourceTree = "<group>"; };
 		450C00271EE405500016877C /* cmark_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmark_version.h; path = cmark/cmark_version.h; sourceTree = "<group>"; };
 		450C00281EE405500016877C /* cmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmark.h; path = cmark/cmark.h; sourceTree = "<group>"; };
-		450C00291EE405500016877C /* libcmark.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcmark.a; path = cmark/libcmark.a; sourceTree = "<group>"; };
 		453120BE1E9E1E1C00D752F5 /* QLCommonMark.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLCommonMark.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		453120C11E9E1E1C00D752F5 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 		453120C31E9E1E1C00D752F5 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				450C002D1EE405500016877C /* libcmark.a in Frameworks */,
+				1535E804279334B6004AE429 /* libcmark.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,10 +50,10 @@
 		450C00251EE4023B0016877C /* cmark */ = {
 			isa = PBXGroup;
 			children = (
+				1535E803279334B6004AE429 /* libcmark.a */,
 				450C00261EE405500016877C /* cmark_export.h */,
 				450C00271EE405500016877C /* cmark_version.h */,
 				450C00281EE405500016877C /* cmark.h */,
-				450C00291EE405500016877C /* libcmark.a */,
 			);
 			name = cmark;
 			sourceTree = "<group>";
@@ -154,6 +154,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 453120B41E9E1E1C00D752F5;
@@ -291,6 +292,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/QLCommonMark/cmark",
+					"$(PROJECT_DIR)/QLCommonMark",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.digitalmoksha.QLCommonMark;
@@ -309,6 +311,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/QLCommonMark/cmark",
+					"$(PROJECT_DIR)/QLCommonMark",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.digitalmoksha.QLCommonMark;
